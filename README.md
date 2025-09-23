@@ -1,4 +1,4 @@
 
 
-# ex1
+# PHP programming language exercises
 
