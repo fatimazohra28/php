@@ -47,7 +47,7 @@ while ($i < 6) {
 $i = 0;
 while ($i < 6) {
   $i++;
-  if ($i == 3) continue;//Stop, and jump to the next iteration if $i is 3 .توقف وانتقل إلى التكرار التالي إذا كان 
+  if ($i == 3) continue;// fotha okml /Stop, and jump to the next iteration if $i is 3 .توقف وانتقل إلى التكرار التالي إذا كان 
   echo $i;
 };// 1 2 4 5 6 
 //do while
