@@ -137,16 +137,57 @@ print_r(array_merge($tab_merge3,$tab_merge4));//[0]=>php [1]=>css [2]=>js [3]=>h
 print_r(array_replace($tab_merge1,$tab_merge2));//meme resultat 1 dyal array_merge
    
 print_r(array_replace($tab_merge3,$tab_merge4));// [10]=>go [20]=>css [30]=>js [40]=>html 
+$tab31=["a","b","c","1",1];
+ //  array_rand(array) kat3ti les index(key) dyal araay 3chwa2ian
+echo $tab31[array_rand($tab31)];//val aleatoire  array[index]
+shuffle($tab31);//execution dyal shuffle katkhrb9 tab
+print_r($tab31);//application 
+/******** */
+$alphb=["A","B","C","D"];
+array_shift($alphb);//delete first element
+array_pop($alphb);//delete last element
+array_unshift($alphb,"A2");//add  element in debut
+array_push($alphb,"D2");//add  element in END
+$alphb[]="D3";//autre methode d'ajoute =push
+print_r($alphb);
+/*********************** */   
+//array_slice($array,position_starting,nombre elemts)
+$alphb1=["A","B","C","D","E","F","G"];
+
+print_r(array_slice($alphb1,2));//[0]=>C [1]=>D [2]=>E [3]=>F [4]=>G 
+print_r(array_slice($alphb1,-4));//[0]=>D [1]=>E [2]=>F [3]=>G 
+
+print_r(array_slice($alphb1,2,2));//[0]=>C [1]=>D
+print_r(array_slice($alphb1,2,-2));//[0]=>C [1]=>D [2]=>E
+print_r($alphb1);//maw9a3 walo ltabl *****
+$chats=[10=>1,20=>2,30=>3];
+print_r(array_slice($chats,0,2));//[0] => 1 [1] => 2 
+print_r(array_slice($chats,0,2,true));// [10] => 1 [20] => 2
+
+//array_splice($array,position_starting,nombre elemts,elmts replace)
+
+//print_r(array_splice($alphb1,2));//[0]=>C [1]=>D [2]=>E [3]=>F [4]=>G 
+//print_r($alphb1);//[0]=>A [1]=>B *****
+
+//print_r(array_splice($alphb1,2,-2));//[0] => C [1] => D [2] => E
+//print_r($alphb1);//[0] =>A [1] =>B [2] =>F [3] =>G  *****
+
+//print_r(array_splice($alphb1,2,2,["CN","DN"]));//0] => C [1] => D
+//print_r($alphb1);//[0]=>A [1]=>B [2]=>CN [3] => DN [4] => E [5] => F [6] => G
    
-arr
+print_r(array_splice($alphb1,2,1,["CN","DN"]));//0] => C 
+print_r($alphb1);//[0] => A [1] => B [2] => CN [3] => DN [4] => D [5] => E [6] => F [7] => G
    
-   
-   
-   
-   
-   
-   
-   
+   /***** */
+   //sort(tabl) tartib tab normal  sort # rsort(tabl)
+   //asort(tabl) tartib tab associat (tartib b values)  sort # arsort(tabl)
+   //ksort(tabl) tartib tab associat (tartib b keys)  sort # krsort(tabl)
+   $files=["photo1.png","photo20.png","photo3.png"];
+   //sort($files);//[0] => photo1.png [1] => photo20.png [2] => photo3.png 
+natsort($files);//[0] => photo1.png [2] => photo3.png [1] => photo20.png )
+//natsort($files) :kadir tartib lbachar
+print_r($files);
+
    ?>
 </body>
 
