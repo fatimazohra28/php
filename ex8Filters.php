@@ -51,4 +51,14 @@ var_dump(filter_var($email1,FILTER_SANITIZE_EMAIL));//ma@gmail.com
     $url="http   s://elz    ero.o rg"  ;
 var_dump(filter_var($url,FILTER_SANITIZE_URL));//https://elzero.org
 
+  //filter_input
+//echo $_GET["num"]; hadi ghat3tina ERROR
+echo  filter_input(INPUT_GET,"num",FILTER_SANITIZE_NUMBER_INT);
+
 ?>
+<!-- Filter_Input -->
+<form action="" method="GET">
+    <input type="text" name="num">
+    <input type="submit" value="send">
+
+</form>
