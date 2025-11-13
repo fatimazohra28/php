@@ -20,6 +20,11 @@ echo round(5.50)."<br>";//6
 echo round(5.49)."<br>";//5
 echo round(5.49,1)."<br>";//5.5
 
+echo sqrt(25)."<br>";//5       5*5
+echo sqrt(16)."<br>";//4       4*4
+
+echo min([12,3,44,5,6,1])."<br>";//1
+echo max([12,3,44,5,6,1])."<br>";//44
 
 
 
